@@ -1,0 +1,258 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+header {
+    padding: 32px;
+
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+
+   
+}
+
+footer {
+    padding: 20px 30px;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+.style-logo {
+    display: block;
+    width: 289px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.style-nav ul{
+    list-style-type: none;
+}
+
+.style-nav li {
+    color: #2f322a;
+    text-align: center;
+    display: block;
+    padding: 8px;
+}
+
+.hero {
+    background-image: url(../source/image5.png); 
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px 50px 20px;
+    color: white;
+    text-align: center;
+}
+h1 {
+    font: 48px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    color: black;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+h2 {
+    font: 30px;
+    font-weight: 300;
+    margin-bottom: 23px;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+h3 {
+    font: 16px;
+    font-weight: 400;
+    margin-bottom: 120px;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+h4 {
+    font: 16px;
+    font-weight: 300;
+    margin-bottom: 35px;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+p {
+    font: 16px;
+    font-weight: 400;
+    margin-bottom: 35px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+
+
+.button {
+    background-color: #82c596;
+    color: white;
+    padding: 12px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.info-box-tan {
+    background-color: gray;
+    color: #fff;
+    padding: 30px 30px 60px;
+    text-align: center;
+} 
+
+.info-box-dark {
+    background-color: darkcyan;
+    color: #fff;
+    padding: 30px 30px 60px;
+    text-align: center;
+} 
+
+
+.footer-text {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+
+
+.col {
+    width: 100%;
+}
+
+.row:before, .row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.countdown {
+    background-color: #fef7f0;
+    color: #333;
+    text-align: center;
+    padding: 40px 0;
+}
+#timer {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.benefit {
+    background-color: #e6f3ec;
+    color: #1e463a;
+    padding: 40px 20px;
+    text-align: center;
+}
+.benefit ul {
+    list-style: none;
+    padding: 0;
+}
+.benefit li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+.reviews {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+.review-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+
+
+/*타블렛 시작*/
+
+@media(min-width:768px) {
+    body {
+        max-width: 778px;
+        /*너비가 768이상일 때
+        바디의 최대 너비를
+        778로 제한*/
+        
+    }
+
+    .style-nav ul li {
+        display: inline-block;
+    }
+
+    .style-nav ul {
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 40px;
+        margin-bottom: 90px;
+    }
+
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    .col-md-one-half {
+        width: 50%;
+    }
+
+    .col {
+        float: left;
+        padding: 20px 7px 14px;
+    }
+}
+
+/*dasktop*/
+
+@media(min-width:1024px){
+    body{
+        max-width: 1200px;
+    }
+    
+    .style-logo{
+        float: left;
+    }
+
+    .style-nav{
+        float: right;
+    }
+
+    .col-lg-one-fourth {
+        width: 25%;
+    }
+}
